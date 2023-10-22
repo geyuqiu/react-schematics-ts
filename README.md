@@ -13,10 +13,8 @@ Generate react component with storybook and unit test(snapshot by enzyme) file b
 $ tree src/components/Header/
 
 src/components/Header/
-├── Header.jsx
-├── Header.stories.js
-├── Header.test.js
-└── index.js
+├── Header.tsx
+├── Header.test.tsx
 ```
 
 ![](https://github.com/hand-dot/component-gen/blob/master/component-gen.gif)

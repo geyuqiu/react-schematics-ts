@@ -14,10 +14,8 @@ describe("component-gen", () => {
     );
 
     expect(tree.files).toEqual([
-      "/src/components/Header/index.js",
-      "/src/components/Header/Header.jsx",
-      "/src/components/Header/Header.stories.js",
-      "/src/components/Header/Header.test.js"
+      "/src/components/Header/Header.test.tsx",
+      "/src/components/Header/Header.tsx",
     ]);
   });
 });
