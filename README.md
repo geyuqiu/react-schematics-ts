@@ -21,7 +21,7 @@ src/components/Header/
 
 # Install
 
-`$ npm install --save-dev @angular-devkit/schematics-cli component-gen`
+`$ npm install --save-dev @angular-devkit/schematics-cli react-schematics-ts`
 
 # Setup
 
@@ -29,6 +29,6 @@ in `package.json`
 
 ```
   "scripts": {
-    "gen": "schematics component-gen:react"
+    "gen": "schematics react-schematics-ts:react"
   }
 ```

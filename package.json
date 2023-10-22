@@ -1,7 +1,7 @@
 {
-  "name": "component-gen",
+  "name": "react-schematics-ts",
   "version": "1.0.1",
-  "description": "generate react component with storybook and unit test file by schematics",
+  "description": "generate react component with ts and unit test file by schematics (forked)",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js"
