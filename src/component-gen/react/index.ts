@@ -7,6 +7,7 @@ import {
   move
 } from "@angular-devkit/schematics";
 import { strings } from "@angular-devkit/core";
+import * as path from "path";
 
 export interface ComponentOptions {
   path: string;
@@ -15,11 +16,18 @@ export interface ComponentOptions {
 
 export function generateComponent(options: ComponentOptions): Rule {
   return () => {
-    const path = `${options.path}/${strings.classify(options.name)}`;
+    const normalizedPath = options.path
+      ? path.normalize(options.path)
+      : ".";
+
+    const finalPath = path.join(
+      normalizedPath,
+      strings.classify(options.name)
+    );
 
     const templateSource = apply(url("../files/react"), [
       template({ ...strings, ...options }),
-      move(path)
+      move(finalPath)
     ]);
 
     return mergeWith(templateSource);

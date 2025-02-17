@@ -17,8 +17,6 @@ src/components/Header/
 ├── Header.test.tsx
 ```
 
-![](https://github.com/hand-dot/component-gen/blob/master/component-gen.gif)
-
 # Install
 
 `$ npm install --save-dev @angular-devkit/schematics-cli react-schematics-ts`
