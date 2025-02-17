@@ -1,6 +1,6 @@
 {
   "name": "react-schematics-ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "generate react component with ts and unit test file by schematics (forked)",
   "scripts": {
     "build": "tsc -p tsconfig.json",
